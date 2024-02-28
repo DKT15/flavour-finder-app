@@ -1,0 +1,47 @@
+[
+    {
+        "name": "restaurant A"
+    },
+    {
+        "name": "Restaurant B"
+    },
+    {   
+        "name": "Restaurant C"
+    },
+]
+
+[
+    {
+        "cuisine": "Cuisine A"
+    },
+    {
+        "cuisine": "Cuisine B"
+    },
+    {   
+        "cuisine": "Cuisine C"
+    },
+]
+
+[
+    {
+        "city": "City A"
+    },
+    {
+        "city": "City B"
+    },
+    {   
+        "city": "City C"
+    },
+]
+
+[
+    {
+        "country": "Country A"
+    },
+    {
+        "country": "Country B"
+    },
+    {   
+        "country": "Country C"
+    },
+]
