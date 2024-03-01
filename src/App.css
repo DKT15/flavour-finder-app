@@ -25,20 +25,17 @@
     transform: rotate(360deg);
   }
 }
+/* FILTER CSS START*/
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.css-b62m3t-container {
+  width: 15%;
 }
 
-.card {
-  padding: 2em;
+.css-13cymwt-control {
+  width: 100%;
 }
 
-.read-the-docs {
-  color: #888;
-}
+/* FILTER CSS END*/
 
 .jumbotron-container {
   position: relative;
