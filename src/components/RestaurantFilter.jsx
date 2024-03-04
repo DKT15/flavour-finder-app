@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../App.css";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
+import "../App.css";
 import Restaurants from "./Restaurants";
 
 const Autocomplete = () => {

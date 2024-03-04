@@ -1,6 +1,4 @@
 import React from "react";
-import "../data.js";
-import "./RestaurantFilter.jsx";
 
 function Card(props) {
   const { restaurant_name, restaurant_type, city, country, image } = props.item;
