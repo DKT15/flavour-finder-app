@@ -1,27 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { getAllRestaurants, getRestaurantByCity } from "../api/restaurants";
 import Card from "./Card";
-import { data } from "../data";
 
 function Restaurants(props) {
   const [restaurants, setRestaurants] = useState([]);
 
   useEffect(() => {
-    if (props.filter?.label) {
-      setRestaurants(
-        data.filter((item) => {
-          return item.city === props.filter?.label;
-        })
-      );
-    } else {
-      setRestaurants(data);
+    async function fetchRestaurants() {
+      try {
+        let data;
+        if (props.filter?.label) {
+          console.log(props.filter?.label);
+          data = await getRestaurantByCity(props.filter?.label);
+        } else {
+          data = await getAllRestaurants();
+        }
+
+        setRestaurants(data);
+      } catch (error) {
+        console.error("Error fetching restaurants:", error);
+      }
     }
-  }, [props.filter?.label]);
+    fetchRestaurants();
+  }, [props]);
 
   return (
     <div className="restaurants">
-      {restaurants.map((data) => {
-        return <Card key={data.restaurant_id} item={data} />;
-      })}
+      {restaurants.length === 0 ? (
+        <p>No Restaurent Found</p>
+      ) : (
+        restaurants.map((restaurant) => {
+          return <Card key={restaurant.restaurant_id} item={restaurant} />;
+        })
+      )}
     </div>
   );
 }
