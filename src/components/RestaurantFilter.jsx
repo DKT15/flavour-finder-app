@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 import "../App.css";
 import Restaurants from "./Restaurants";
+import { removeData } from "jquery";
 
 const Autocomplete = () => {
   const [value, setValue] = useState(null);
@@ -13,6 +14,7 @@ const Autocomplete = () => {
           value,
           placeholder: "Enter location",
           onChange: setValue,
+          // onClick: removeData,
         }}
         apiOptions={{ language: "en-GB", region: "uk" }}
       />

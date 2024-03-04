@@ -8,10 +8,18 @@
 
 .css-b62m3t-container {
   width: 15%;
+  margin: 20px 0 0 20px;
+
 }
 
 .css-13cymwt-control {
   width: 100%;
+  border-width: 2px !important;
+  border-color: #1c4c1a !important;
+}
+
+.css-1hb7zxy-IndicatorsContainer {
+  display: none !important;
 }
 
 /* FILTER CSS END*/

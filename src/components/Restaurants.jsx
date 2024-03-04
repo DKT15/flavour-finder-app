@@ -10,7 +10,6 @@ function Restaurants(props) {
       try {
         let data;
         if (props.filter?.label) {
-          console.log(props.filter?.label);
           data = await getRestaurantByCity(props.filter?.label);
         } else {
           data = await getAllRestaurants();
