@@ -4,6 +4,14 @@
   text-align: center;
 }
 
+
+
+.App{
+  background-color: #fefefe;
+  height: 100vh;
+  width: 100%;
+}
+
 /* FILTER CSS START*/
 
 .css-b62m3t-container {

@@ -1,3 +1,20 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* :root {
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -10,8 +27,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(249, 246, 246, 0.87);
+  background-color: #484947;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -71,6 +88,22 @@ button:hover {
   ;
   display: inline-block;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+
 
 .card .card-image {
   max-width: 60%;
