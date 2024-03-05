@@ -22,6 +22,24 @@
   display: none !important;
 }
 
+.css-1dimb5e-singleValue:after {
+  display: none !important;
+}
+
+.clear__btn {
+  display: flex;
+  margin: 20px 0 0 20px;
+  background-color: #1c4c1a;
+  color: white;
+  border-color: #1c4c1a;
+  border-radius: 4px;
+}
+
+.clear__btn:hover {
+  background-color: #2a9226;
+  border-color: #2a9226;
+}
+
 /* FILTER CSS END*/
 
 /* JUMBOTRON CSS START*/

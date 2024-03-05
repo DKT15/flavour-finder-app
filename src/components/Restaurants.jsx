@@ -26,7 +26,7 @@ function Restaurants(props) {
   return (
     <div className="restaurants">
       {restaurants.length === 0 ? (
-        <p>No Restaurent Found</p>
+        <p>No restaurants found</p>
       ) : (
         restaurants.map((restaurant) => {
           return <Card key={restaurant.restaurant_id} item={restaurant} />;
