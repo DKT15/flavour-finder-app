@@ -27,19 +27,28 @@
   font-weight: 400;
 
   color-scheme: light dark;
+<<<<<<< HEAD
+  color: var(--main-text-color, #1c4c1a);
+  background-color: var(--main-background-color, #fff5eb);
+=======
   color: rgba(249, 246, 246, 0.87);
   background-color: #484947;
+>>>>>>> d8696d8138628252d259cbbeef1404296980b177
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-background-color: #fff5eb;
+  --main-text-color: #1c4c1a;
+  --accent-color: #66462c;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--accent-color, #646cff);
   text-decoration: inherit;
 }
 
@@ -51,13 +60,19 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 600px;
   min-height: 100vh;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  padding: 100px;
+  color: var(--main-text-color);
+  border-top: 2px solid #66462c; 
+  border-bottom: 2px solid #66462c; 
 }
 
 button {
@@ -67,15 +82,19 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #66462c;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: var(--main-text-color);
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: var(--accent-color);
 }
 
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 /* CARD CSS START */
 .card {
   border: 1px solid hsl(0, 0%, 9%);
@@ -92,7 +111,7 @@ button:hover {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #161515b1;
   }
   a:hover {
     color: #747bff;
@@ -102,6 +121,26 @@ button:hover {
   }
 } */
 
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Card styling */
+.card {
+  box-sizing: border-box;
+  border: 1px solid hsl(0, 0%, 9%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #66462cd5;
+  padding: 20px 20px 20px;
+  margin: 30px 20px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
 
 
 
@@ -109,9 +148,23 @@ button:hover {
   max-width: 60%;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 50%;
+  margin-bottom: 30%;
 }
 
+.card-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card .card-title {
+  margin: 0;
+  color: var(--main-text-color);
+}
+
+.card .card-cuisine,
+.card .card-city {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--accent-color);
+}
 .card .card-title {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
