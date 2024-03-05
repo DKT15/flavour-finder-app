@@ -1,23 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import "./App.css"
-import NavBar from './components/NavBar';
+import FlavourFinderApp from "./components/FlavourFinderApp";
 
 
 function App() {
 
-  return (
-    <div>
-    <Router>
-  
-      <NavBar>
+  return<FlavourFinderApp/>;
+  }
 
-        </NavBar>
-     
-    </Router>
-    </div>
-  );
-}
 
 export default App;
 

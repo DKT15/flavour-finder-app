@@ -1,13 +1,19 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Flavourfinderapp from 'flavour-finder-app'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import * as bootstrap from 'bootstrap';
 
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <Router>
+      <App />
+
+    </Router>
+  </React.StrictMode>
+);
