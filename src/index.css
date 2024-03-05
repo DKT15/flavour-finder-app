@@ -1,11 +1,39 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* :root {
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
+<<<<<<< HEAD
   color: var(--main-text-color, #1c4c1a);
   background-color: var(--main-background-color, #fff5eb);
+=======
+  color: rgba(249, 246, 246, 0.87);
+  background-color: #484947;
+>>>>>>> d8696d8138628252d259cbbeef1404296980b177
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -67,6 +95,17 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+/* CARD CSS START */
+.card {
+  border: 1px solid hsl(0, 0%, 9%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 1%, 84%);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  ;
+  display: inline-block;
 }
 
 @media (prefers-color-scheme: light) {
@@ -80,7 +119,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 .app {
   display: flex;
@@ -103,6 +142,8 @@ button:focus-visible {
   color: var(--main-text-color);
 }
 
+
+
 .card .card-image {
   max-width: 60%;
   height: auto;
@@ -124,3 +165,25 @@ button:focus-visible {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--accent-color);
 }
+.card .card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: hsl(0, 6%, 86%);
+}
+
+.card .card-cuisine {
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 5%, 79%);
+}
+
+.card .card-city {
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsla(0, 83%, 9%, 0.827);
+}
+
+.card .card-cuisine {
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsla(0, 83%, 9%, 0.827);
+}
+
+/* CARD CSS END */
