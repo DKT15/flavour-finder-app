@@ -1,5 +1,4 @@
-
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,13 +26,10 @@
   font-weight: 400;
 
   color-scheme: light dark;
-<<<<<<< HEAD
   color: var(--main-text-color, #1c4c1a);
   background-color: var(--main-background-color, #fff5eb);
-=======
   color: rgba(249, 246, 246, 0.87);
   background-color: #484947;
->>>>>>> d8696d8138628252d259cbbeef1404296980b177
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -113,15 +109,17 @@ button:focus-visible {
     color: #213547;
     background-color: #161515b1;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
-} */
+}
 
-.app {
+*/ .app {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -165,6 +163,7 @@ button:focus-visible {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--accent-color);
 }
+
 .card .card-title {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
