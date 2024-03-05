@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Form with Stars</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="./reviews.css">
+</head>
+<body>
+
+    <!--Form container-->
+<div class="container">
+    <h1>Leave a Review</h1>
+    <form id="reviewForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+        
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        
+            
+            <label for="restaurantName">Restaurant Name:</label>
+            <input type="text" id="restaurantName" name="restaurantName" required>
+        <!--Ratings-->
+            <label for="rating">Ratings:</label>
+            <div class="ratings-wrapper">
+             <div class="rating">
+            <input type="number" name="rating" hidden>
+            <i class='bx bx-star star' style="--i: 1"></i>
+            <i class='bx bx-star star' style="--i: 2"></i>
+            <i class='bx bx-star star' style="--i: 3"></i>
+            <i class='bx bx-star star' style="--i: 4"></i>
+            <i class='bx bx-star star' style="--i: 5"></i>
+             </div>
+
+             </div>   
+            </div>
+        
+        
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required placeholder="What'd you think?"></textarea>
+        
+        <input type="submit" value="Submit Review">
+        </div>
+    </form>
+</div>
+
+<script src="review.js"></script>
+
+</body>
+</html>
+
