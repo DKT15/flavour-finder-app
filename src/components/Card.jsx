@@ -2,7 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Card(props) {
-  const { restaurant_id, restaurant_name, restaurant_type, city, country, image } = props.item;
+  const {
+    restaurant_id,
+    restaurant_name,
+    restaurant_type,
+    city,
+    country,
+    image,
+  } = props.item;
 
   return (
     <Link to={`/restaurant/${restaurant_id}`} className="card-link">
