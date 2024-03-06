@@ -1,0 +1,56 @@
+/* FILTER CSS START*/
+
+.css-b62m3t-container {
+    width: 88%;
+  }
+  
+  .css-13cymwt-control {
+    width: 100%;
+    border-width: 2px !important;
+    border-color: #1c4c1a !important;
+  }
+  
+  .css-1wy0on6 {
+    display: none !important;
+  }
+  
+  .css-1hb7zxy-IndicatorsContainer {
+    display: none !important;
+  }
+  .clear-btn{
+    background-color: #1c4c1a;
+  }
+  
+  /* .clear__btn {
+    display: flex;
+    margin: 20px 0 0 20px;
+    padding: 4px 16px 4px 16px;
+    background-color: #1c4c1a;
+    color: white;
+    border-radius: 4px;
+    border-color: #1c4c1a;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .clear__btn:hover {
+    background-color: #2a9226;
+    border-color: #2a9226;
+  } */
+  
+  /* Small phones, tablets, large smart phones */
+  @media (max-width: 768px) {
+    .css-b62m3t-container {
+      width: 25%;
+    }
+  }
+  
+  /* Small phones */
+  
+  @media (max-width: 480px) {
+    .css-b62m3t-container {
+      width: 40%;
+    }
+  }
+  
+  /* FILTER CSS END*/

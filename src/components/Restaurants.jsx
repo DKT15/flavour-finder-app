@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getAllRestaurants, getRestaurantByCity } from "../api/restaurants";
-import Card from "./Card";
+import Card from "./card/Card";
 
 function Restaurants(props) {
   const [restaurants, setRestaurants] = useState([]);
@@ -24,14 +24,22 @@ function Restaurants(props) {
   }, [props]);
 
   return (
-    <div className="restaurants">
-      {restaurants.length === 0 ? (
-        <p>No restaurants found</p>
-      ) : (
-        restaurants.map((restaurant) => {
-          return <Card key={restaurant.restaurant_id} item={restaurant} />;
-        })
-      )}
+    <div className="container restaurants">
+      <div className="row row-cols-2 row-cols-md-4 gy-3">
+        {restaurants.length === 0 ? (
+          <p>No restaurants found</p>
+        ) : (
+          restaurants.map((restaurant) => {
+
+            return (
+              <div className="col">
+                <Card key={restaurant.restaurant_id} item={restaurant} />
+              </div>
+            
+            )
+          })
+        )}
+      </div>
     </div>
   );
 }

@@ -104,11 +104,14 @@ export async function getReviewsByRestaurantId(restaurantId) {
 
 // Function to add a review
 export async function addReview(reviewData) {
+  
   try {
+    const requestData = {
+      ...reviewData,
+      api_key: apiKey
+    };
     const response = await axios.post(`${baseURL}/reviews.php`, reviewData, {
-      params: {
-        api_key: apiKey,
-      },
+      params: requestData,
     });
     return response.data;
   } catch (error) {

@@ -3,7 +3,7 @@ import { addReview } from "../../api/restaurants"; // Import the addReview funct
 import StarRating from "./StarRating";
 import "./ReviewForm.css"; // Import CSS file for styling
 
-function ReviewForm({ restaurant_id }) {
+function ReviewForm({ restaurant_id, onReviewSubmit }) {
   const [formData, setFormData] = useState({
     reviewer_name: "",
     reviewer_email: "",
@@ -23,6 +23,9 @@ function ReviewForm({ restaurant_id }) {
         comment: "",
       });
       alert("Review submitted successfully!");
+      if(onReviewSubmit){
+        onReviewSubmit();
+      }
     } catch (error) {
       console.error("Error submitting review:", error);
       alert("Failed to submit review. Please try again later.");

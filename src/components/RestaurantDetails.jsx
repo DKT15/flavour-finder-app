@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom"; // Import Link from react-router-dom
 import { getRestaurantById } from "../api/restaurants";
 import { addReview, getReviewsByRestaurantId } from "../api/restaurants";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import ReviewForm from "./reviews/ReviewForm";
 import "./RestaurantDetails.css";
 
@@ -55,6 +57,15 @@ function RestaurantDetails() {
       // Handle error if needed
     }
   };
+  
+  const refetchReviews = async () => {
+    try {
+      const reviewsData = await getReviewsByRestaurantId(id);
+      setReviews(reviewsData);
+    } catch (error) {
+      console.error("Error fetching reviews:", error);
+    }
+  };
 
   // Render loading message while data is being fetched
   if (loading) {
@@ -62,9 +73,12 @@ function RestaurantDetails() {
   }
 
   return (
-    <div className="restaurant-details">
+    <div className="container">
+      <div className="restaurant-details">
+      
+      <Link to="/" className="btn btn-light bg-success text-white mb-2"><FontAwesomeIcon icon={faArrowLeft} /> Back to Home</Link>
       {restaurant && (
-        <div>
+        <div className="text-center">
           <h2>{restaurant.restaurant_name}</h2>
           <p>Restaurant Type: {restaurant.restaurant_type}</p>
           <p>City: {restaurant.city}</p>
@@ -102,11 +116,13 @@ function RestaurantDetails() {
       <hr />
 
       <h3>Leave a Review</h3>
-      <ReviewForm onSubmit={handleReviewSubmit} restaurant_id={id} />
+      <ReviewForm onSubmit={handleReviewSubmit} restaurant_id={id} onReviewSubmit={refetchReviews} />
 
-      {/* Back button to navigate to the root URL */}
-      <Link to="/">Back to Home</Link>
+      
+      
     </div>
+    </div>
+    
   );
 }
 
