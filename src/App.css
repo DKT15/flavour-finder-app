@@ -4,8 +4,6 @@
   text-align: center;
 }
 
-
-
 .App {
   background-color: #fefefe;
   height: 100vh;
@@ -24,6 +22,10 @@
   width: 100%;
   border-width: 2px !important;
   border-color: #1c4c1a !important;
+}
+
+.css-1wy0on6 {
+  display: none !important;
 }
 
 .css-1hb7zxy-IndicatorsContainer {
