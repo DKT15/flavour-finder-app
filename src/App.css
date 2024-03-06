@@ -12,7 +12,15 @@ body{
   height: 100vh;
   width: 100%;
 }
+.nav-bar-custom{
+  background-color: #1c4c1b;
+}
 
+.logo{
+  width: auto;
+  height: 60px;
+  margin-right: 15px;
+}
 
 
 /* JUMBOTRON CSS START*/
