@@ -1,6 +1,6 @@
 import "../App.css";
 
-function Jumbotron() {
+function HeroSection() {
   return (
     <div className="jumbotron-container">
       <div className="jumbotron-content">
@@ -11,4 +11,4 @@ function Jumbotron() {
   );
 }
 
-export default Jumbotron;
+export default HeroSection;
