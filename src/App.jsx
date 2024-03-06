@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HeroSection from "./components/HeroSection";
-import RestaurantFilter from "./components/RestaurantFilter";
+import RestaurantFilter from "./components/filter/RestaurantFilter";
 import RestaurantDetails from "./components/RestaurantDetails"; // Import the RestaurantDetails component
 
 function App() {

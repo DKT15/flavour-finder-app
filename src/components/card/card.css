@@ -1,0 +1,21 @@
+
+
+/* Card styling */
+.restaurent-card {
+   height: 100%;
+   overflow: hidden;
+   background-color: #fff5eb;
+}
+.restaurent-img{
+    max-height: 280px;
+    width: 100%;
+    height: 100%;
+}
+.restaurent-img img{
+    width: 100%;
+    height: 100%;
+}
+
+  
+  
+  
