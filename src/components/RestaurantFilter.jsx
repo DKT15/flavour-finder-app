@@ -7,10 +7,12 @@ const Autocomplete = () => {
   const autocompleteRef = useRef(null);
   const [value, setValue] = useState("");
 
+  // function to clear value when the user wants the change the city of restaurants.
   const handleCity = () => {
     setValue("");
   };
 
+  // Clears the city search and resets the page to default.
   const clearSearch = () => {
     setValue("");
     if (autocompleteRef.current) {
