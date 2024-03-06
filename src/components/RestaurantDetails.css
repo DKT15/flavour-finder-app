@@ -1,0 +1,47 @@
+.restaurant-details {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .restaurant-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant-details p {
+    margin-bottom: 5px;
+  }
+  
+  .restaurant-image {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .review-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .review-rating {
+    font-weight: bold;
+  }
+  
+  .review-comment {
+    margin-top: 5px;
+  }
+  

@@ -84,3 +84,35 @@ export async function getRestaurantByCityAndCountry(city, country) {
     return null;
   }
 }
+
+
+// Function to get reviews by restaurant ID
+export async function getReviewsByRestaurantId(restaurantId) {
+  try {
+    const response = await axios.get(`${baseURL}/reviews.php`, {
+      params: {
+        api_key: apiKey,
+        restaurant_id: restaurantId
+      }
+    });
+    return response.data.reviews;
+  } catch (error) {
+    console.error("Error fetching reviews by restaurant ID:", error);
+    return null;
+  }
+}
+
+// Function to add a review
+export async function addReview(reviewData) {
+  try {
+    const response = await axios.post(`${baseURL}/reviews.php`, reviewData, {
+      params: {
+        api_key: apiKey,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Error adding review:", error);
+    return null;
+  }
+}
